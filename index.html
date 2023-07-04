@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width-device,initial-scale=1.0">
+<title>
+Clock
+</title>
+<style>
+#hour::after{
+   content:"Hrs :";
+   color:red;
+   padding-left:10px;
+   
+}
+#min::after{
+   content:"Min : ";
+   color:orange;
+   padding-left:10px;
+}
+
+#sec::after{
+   content:" Sec";
+   color:violet;
+}   
+#date::after{
+   content:":";
+   color:red;
+   padding-left:10px;
+   
+}
+#date::before{
+   content:"(";
+   color:green;
+}
+#year::after{
+   content:")";
+   color:green;
+}
+
+#month::after{
+   content:": ";
+   color:orange;
+   padding-left:10px;
+}
+body{
+  margin-top:100px;
+}
+
+</style>
+</head>
+<body style="background-color:black;color:white">
+<div id="hr">
+
+</div>
+<div style="display:inline-block;display:flex;justify-content	:center;">
+<div style="box-shadow:0 0 10px white;">
+<div style="display:flex;justify-content:center;padding-top:60px;">
+<div style="display:inline-block;box-shadow:0 0 30px white; 	">
+<div style="display:flex;font-size:50px; justify-content:center;">
+<div id="hour" style="padding-left:0px;">
+
+</div>
+<div id="min" style="padding-left:12px;">
+
+</div>
+<div id="sec" style="padding-left:12px;">
+
+</div>
+<div id="am" style="padding-left:12px;border:1px solid black">
+
+</div>
+</div>
+</div>
+</div>
+<!-- <div style="box-shadow:0 0 20px gray;display:flex; display:inline-block;margin-top:20px; text-align:center;"> -->
+<div style="display:flex;justify-content:center;">     
+<div id="day" style="padding-left:0px;color:pink;font-size:40px;text-align:center;margin-bottom:20px;display:inline-block;margin-top:20px;margin-right:9px;">
+
+</div>
+
+<div style="text-align:center;margin-top:20px;">
+<div style="display:inline-block;">
+<div style="display:flex;font-size:50px;; ">
+<div id="date" style="padding-left:0px;">
+
+</div>
+<div id="month" style="padding-left:0px;">
+
+</div>
+<div id="year" style="padding-left:
+0px;">
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+<script src="main.js">
+</script>
+</html>
